@@ -1,0 +1,293 @@
+.time-day{
+    background-color: bisque;
+}
+.time-night{
+    background-color: black;
+    color: darkgray;
+}
+li {
+    display: inline-block;
+    margin: 10px ;
+}
+
+<<<<<<< HEAD
+=======
+.codeList{
+   background-color: black;
+    color: darkgray;
+}
+
+>>>>>>> 249b23d (03.12.21)
+A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+A:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: red; /* Ссылка красного цвета */
+}
+
+.code{
+    margin-left: 30px;
+}
+.codeCaption{
+    font-kerning: auto;
+}
+.MySite {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.Header_Style{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-image: url(images/header.jpg);
+}
+.Main_PageSize{
+    width: 1fr;
+}
+.image_MyPhoto{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.div_MyFIO{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: white;
+    background: green;
+    padding: 2%;
+
+}
+.div_AboutMe{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    color: white;
+    background: red;
+    padding: 2%;
+}
+.div_MyReviews{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    white-space: pre-line;
+    color: white;
+    background: orange;
+    padding: 2%;
+}
+
+.elementNameEN{
+    font-size: 60px;
+}
+
+/*table, td, th{
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 15px 25px;
+}
+
+ */
+/*
+.grid{
+    display: grid;
+    grid-template-columns: repeat();
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-rows: 50px 50px 50px;
+}
+*/
+
+.elementNumber{
+    grid-area: Number;
+}
+
+.elementNameEN{
+    grid-area: NameEN;
+    margin-top: -8px;
+}
+.elementNameRU{
+    grid-area: NameRU;
+    font-size: 14px;
+}
+.elementStroenie{
+    grid-area: Stroenie;
+    font-size: 10px;
+}
+.elementMasse{
+    grid-area: Masse;
+    font-size: 12px;
+}
+.HimTable{
+    display: grid;
+    grid-template-columns: repeat(4, 180px );
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-left: 0px;
+ }
+.HimElement{
+    display: grid;
+    grid-template-columns: 50px 30px 30px 40px;
+    grid-template-rows: 20px 20px 20px;
+    box-shadow: 0px 0px 0px 2px black;
+    grid-template-areas:
+    'Number NameEN NameEN NameRU'
+    '. NameEN NameEN .'
+    'Stroenie NameEN NameEN Masse';
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.grid1, .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.f-container {
+    display: grid;
+    width: 45vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin:auto;
+}
+
+@media screen and (max-width: 350px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .grid1, .grid2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .MySite {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .Header_Style{
+        background-image: url(images/header.jpg);
+    }
+    .Main_PageSize{
+        width: 1fr;
+    }
+    .image_MyPhoto{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+    }
+    .div_MyFIO{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        color: white;
+        background: green;
+        padding: 2%;
+
+    }
+    .div_AboutMe{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        color: white;
+        background: red;
+        padding: 2%;
+    }
+    .div_MyReviews{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        white-space: pre-line;
+        color: white;
+        background: orange;
+        padding: 2%;
+    }
+
+}
+
+@media screen and (min-width: 351px) and (max-width: 750px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .grid1, .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .MySite {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .Header_Style{
+        background-image: url(images/header.jpg);
+    }
+    .Main_PageSize{
+        width: 1fr;
+    }
+    .image_MyPhoto{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .div_MyFIO{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        color: white;
+        background: green;
+        padding: 2%;
+
+
+    }
+    .div_AboutMe{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        color: white;
+        background: red;
+        padding: 2%;
+    }
+    .div_MyReviews{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        color: white;
+        background: orange;
+        padding: 2%;
+    }
+}
