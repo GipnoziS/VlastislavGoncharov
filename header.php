@@ -15,8 +15,9 @@
             <ul><li>
                     <a href="index.php" >Главная станица</a>
                     <a href="MendeleevPeriodicTable.php">Переодическая таблица </a>
-                    <a href="26.11.php">Домашняя работа за 26.11</a>
-                    <a href="29.11.php">Домашняя работа за 29.11</a>
+                    <a href="26.11.php">Задания 26.11</a>
+                    <a href="29.11.php">Задания 29.11</a>
+                    <a href="1.12.php">Задания 01.12</a>
                 </li>
             </ul>
         </div>
