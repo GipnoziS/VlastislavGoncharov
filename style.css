@@ -10,14 +10,12 @@ li {
     margin: 10px ;
 }
 
-<<<<<<< HEAD
-=======
 .codeList{
-   background-color: black;
-    color: darkgray;
+   background-color: navy;
+    color: coral;
+    text-align: center;
+    size: auto;
 }
-
->>>>>>> 249b23d (03.12.21)
 A {
     text-decoration: none; /* Убирает подчеркивание для ссылок */
 }
@@ -86,23 +84,6 @@ A:hover {
     font-size: 60px;
 }
 
-/*table, td, th{
-    border: 1px solid black;
-    border-collapse: separate;
-    border-spacing: 15px 25px;
-}
-
- */
-/*
-.grid{
-    display: grid;
-    grid-template-columns: repeat();
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-template-rows: 50px 50px 50px;
-}
-*/
-
 .elementNumber{
     grid-area: Number;
 }
@@ -155,7 +136,7 @@ A:hover {
 }
 .f-container {
     display: grid;
-    width: 45vw;
+    width: 25vw;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
