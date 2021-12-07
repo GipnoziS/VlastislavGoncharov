@@ -24,7 +24,6 @@
             <img src="images/facebook_icon.ico" alt="Иконка Facebook" title="Читайте интересные статьи в Facebook" width="100%">
         </div>
     </a>
-
 </section>
 </footer>
 </body>
