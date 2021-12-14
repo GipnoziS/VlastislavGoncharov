@@ -1,4 +1,5 @@
     <?
+    session_start();
     ?>
     <!doctype html>
     <html lang="en">
@@ -24,3 +25,4 @@
             </ul>
         </div>
     </header>
+    <body bgcolor="<?= $_COOKIE['background_color'] ?>">
