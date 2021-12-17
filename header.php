@@ -1,5 +1,28 @@
     <?
     session_start();
+    $hostname = 'localhost';
+    $username = 'Vlastislav';
+    $password = 'Vlastislaff';
+    $dbname = 'Ident';
+
+    /*$dbconnect = mysqli_connect($hostname, $username, $password) or die ("1");
+    mysqli_query($dbconnect, "CREATE DATABASE Ident") or die("2");
+    //var_dump($dbconnect);
+    mysqli_select_db($dbconnect,$dbname);
+    mysqli_query($dbconnect, "CREATE TABLE UserIdent (
+    ID_User INT NOT NULL AUTO_INCREMENT,
+    Name VARCHAR(50) NOT NULL,
+    Password VARCHAR(200) NOT NULL,
+    PRIMARY KEY ( ID_User )
+                       )" );
+    */
+
+    /*$dbconnect = mysqli_connect($hostname, $username, $password) or die ("3");
+    mysqli_select_db($dbconnect,$dbname);
+    mysqli_query($dbconnect, "INSERT INTO UserIdent(ID_User,Name,Password) VALUES (null,'User','e10adc3949ba59abbe56e057f20f883e')");
+    mysqli_query($dbconnect, "INSERT INTO UserIdent(ID_User,Name,Password) VALUES (null,'Admin','21232f297a57a5a743894a0e4a801fc3')");
+    mysqli_query($dbconnect, "INSERT INTO UserIdent(ID_User,Name,Password) VALUES (null,'Guest','084e0343a0486ff05530df6c705c8bb4')");*/
+
     ?>
     <!doctype html>
     <html lang="en">
