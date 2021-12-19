@@ -5,6 +5,11 @@
     background-color: black;
     color: darkgray;
 }
+
+img{
+    width: 100%;
+}
+
 li {
     display: inline-block;
     margin: 10px ;

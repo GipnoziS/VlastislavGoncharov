@@ -1,8 +1,5 @@
 <?php
 
-if (!empty($_POST['login'])) {
-    setcookie('login', $_POST['login'], time() + 3600 * 24 * 7);
-}
 
 if (!empty($_POST['color'])) {
     setcookie('background_color', $_POST['color'], time() + 3600 * 24 * 7);
@@ -11,11 +8,13 @@ if (!empty($_POST['color'])) {
 
 include "header.php";
 
-$name = 'User';
-$password = 'e10adc3949ba59abbe56e057f20f883e';
+require_once "autorize.php";
+
+//$name = 'User';
+//$password = 'e10adc3949ba59abbe56e057f20f883e';
 
     if (isset($_POST['AuthClearBtn'])){
-        $_SESSION['auth'] = 'n';
+        Autorize::UnAuth();
     }
 
     function ColorSwitch()
@@ -40,12 +39,7 @@ $password = 'e10adc3949ba59abbe56e057f20f883e';
 
     //если данные уже введены - проверяем логин и пароль
     if (isset($_POST['submit'])) {
-        $login = $_POST['login'];
-        $user_login = $_POST['login'];
-        $user_password = md5($_POST['password']);
-        if ($name == $user_login && $password == $user_password) {
-            $_SESSION['auth'] = 'y';
-        } else echo '<p style="color: red">В авторизации отказано!</р>';
+        Autorize::Auth($dbconnect, $_POST['login'], $_POST['password']);
     }
 
     if ($_SESSION['auth'] == 'y') {
